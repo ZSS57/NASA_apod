@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-image: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Make sure the background covers the full viewport height */
+  overflow: auto; /* Allow scrolling if content exceeds the viewport */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  min-height: '80vh';
+  display: 'flex';
+  justify-content: 'space-between'; 
+  height: '100%'; 
+  flex-grow: '1';
+}
+
+.history-container, .ban-list-container {
+  width: 25%;
+  color: white;
+  background-color: balck;
+}
+.ban-item {
+  background-color: black; /* Make each banned attribute have a black background */
+  color: white; /* Set text color to white for contrast */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px; 
+  cursor: pointer;
+}
+.history-image-container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.ban-item:hover {
+  background-color: #333; 
+
+}
+.apod-container {
+  width: 50%;
+  text-align: center;
+  color: white;
+  
+}
+.apod-image {
+  max-width: 100%;
+  max-height: 400px; 
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+}
+
+
+.fetch-button {
+  margin-bottom: 20px;
+}
+
+.history-item {
+  margin-bottom: 10px;
+  background-color: black;
+
+}
+
+.history-image {
+  width: 50px;
+  height: 50px;
+}
+
+.ban-item {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  background-color: #eee;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgb(75, 105, 240);
+}
